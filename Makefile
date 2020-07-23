@@ -7,6 +7,8 @@ default: Milan_Koval
 Milan_Koval:
 	pdflatex Milan_Koval.tex
 
+README: 
+	python -m latex2markdown Milan_Koval.tex README.md
 clean:
 	rm -f Milan_Koval.aux
 	rm -f Milan_Koval.dvi
